@@ -10,7 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common crDroid stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -18,6 +18,8 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 TARGET_BUILD_DEVICE_AS_WEBCAM := true
 
 WITH_GMS := false
+# Official-ify
+VOLTAGE_BUILD_TYPE := UNOFFICIAL
 
 # Inherit some common device props
 TARGET_FACE_UNLOCK_SUPPORTED := true
@@ -27,7 +29,7 @@ TARGET_EXCLUDES_AUDIOFX := true
 TARGET_SUPPORTS_QUICK_TAP := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_X00TD
+PRODUCT_NAME := voltage_X00TD
 PRODUCT_DEVICE := X00TD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M1
