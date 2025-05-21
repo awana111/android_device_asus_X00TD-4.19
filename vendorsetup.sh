@@ -12,7 +12,6 @@ git clone --depth=1 --recursive https://github.com/Tiktodz/android_kernel_asus_s
 rm -rf kernel/asus/sdm660/KernelSU-Next/userspace
 
 #Sign-Key
-rm -rf vendor/lineage-priv/keys
-rm -rf vendor/lineage/signing/keys
-mkdir -p vendor/lineage-priv/keys
-git clone https://github.com/electrolaboratory/public-keys vendor/lineage-priv/keys/
+croot && git clone https://github.com/VoltageOS/vendor_voltage-priv_keys vendor/voltage-priv/keys
+cd vendor/voltage-priv/keys
+./keys.sh
