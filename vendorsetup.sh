@@ -15,3 +15,4 @@ rm -rf kernel/asus/sdm660/KernelSU-Next/userspace
 croot && git clone https://github.com/VoltageOS/vendor_voltage-priv_keys vendor/voltage-priv/keys
 cd vendor/voltage-priv/keys
 ./keys.sh
+cd ../../..
