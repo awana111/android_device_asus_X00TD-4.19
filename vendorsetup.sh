@@ -11,6 +11,7 @@ rm -rf kernel/asus/sdm660
 git clone --depth=1 --recursive https://github.com/awana111/android_kernel_asus_sdm660-4.19 -b Ratibor-Rebased-Master kernel/asus/sdm660
 
 #Sign-Key
+rm -rf vendor/voltage-priv/keys
 croot && git clone https://github.com/VoltageOS/vendor_voltage-priv_keys vendor/voltage-priv/keys
 cd vendor/voltage-priv/keys
 ./keys.sh
