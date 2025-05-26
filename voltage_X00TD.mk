@@ -19,6 +19,9 @@ TARGET_BUILD_DEVICE_AS_WEBCAM := true
 
 WITH_GMS := false
 
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Official-ify
 VOLTAGE_BUILD_TYPE := UNOFFICIAL
 
