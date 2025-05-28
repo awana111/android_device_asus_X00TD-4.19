@@ -17,7 +17,16 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 TARGET_BUILD_DEVICE_AS_WEBCAM := true
 
-WITH_GMS := false
+#DerpFest stuff
+DERPFEST_BUILD_TYPE := UNOFFICIAL
+USE_LEGACY_BOOTANIMATION := true
+TARGET_NOT_USES_BLUR := true
+DERPFEST_BUILD_VARIANT := Stable
+TARGET_INCLUDE_ACCORD := false
+TARGET_SUPPORTS_OMX_SERVICE := false
+
+# Boot animaton
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit some common device props
 TARGET_FACE_UNLOCK_SUPPORTED := true
