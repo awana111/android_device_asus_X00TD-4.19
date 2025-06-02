@@ -1,6 +1,6 @@
 #clone device common tree
 rm -rf device/asus/sdm660-common
-git clone --depth=1 https://github.com/awana111/android_device_asus_sdm660-common-4.19 -b 15.0 device/asus/sdm660-common
+git clone --depth=1 https://github.com/awana111/android_device_asus_sdm660-common-4.19 -b Droid device/asus/sdm660-common
 
 # Clone vendor tree
 rm -rf vendor/asus
@@ -16,7 +16,6 @@ rm -rf vendor/lineage/signing/keys
 mkdir -p vendor/lineage-priv/keys
 git clone https://github.com/electrolaboratory/public-keys vendor/lineage-priv/keys/
 
-export PIXELAGE_BUILD=X00TD
 export BUILD_USER=awana
 export KBUILD_BUILD_USER=awana
 export TZ=Asia/Jakarta
