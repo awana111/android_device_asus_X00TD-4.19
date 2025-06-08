@@ -9,15 +9,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common crDroid stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common 2by2 stuff
+$(call inherit-product, vendor/2by2/config/common_full_phone.mk)
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 TARGET_BUILD_DEVICE_AS_WEBCAM := true
 
-WITH_GMS := false
+# 2by2 Flags
+CUSTOM_PROCESSOR := Qualcomm®_Snapdragon™_636
 
 # Inherit some common device props
 TARGET_FACE_UNLOCK_SUPPORTED := true
