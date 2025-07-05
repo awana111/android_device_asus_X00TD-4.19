@@ -16,7 +16,7 @@ rm -rf vendor/lineage/signing/keys
 mkdir -p vendor/lineage-priv/keys
 git clone https://github.com/electrolaboratory/public-keys vendor/lineage-priv/keys/
 
-export PIXELAGE_BUILD=X00TD
+
 export BUILD_USER=awana
 export KBUILD_BUILD_USER=awana
 export TZ=Asia/Jakarta
