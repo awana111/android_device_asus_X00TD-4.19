@@ -17,7 +17,13 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 TARGET_BUILD_DEVICE_AS_WEBCAM := true
 
-WITH_GMS := false
+# EvoX flags.
+BUILD_BCR := true
+EVO_BUILD_TYPE := Unofficial
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_ACCORD := false
+TARGET_SUPPORT_BOOT_ANIMATIONS := true
+WITH_GMS := true
 
 # Inherit some common device props
 TARGET_FACE_UNLOCK_SUPPORTED := true
