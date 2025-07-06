@@ -8,7 +8,7 @@ git clone --depth=1 https://github.com/awana111/proprietary_vendor_asus-4.19 -b 
 
 # Clone prebuilt kernel
 rm -rf kernel/asus/sdm660
-git clone --depth=1 --recursive https://github.com/awana111/android_kernel_asus_sdm660-4.19 -b Ratibor-Rebased-Master kernel/asus/sdm660
+git clone --depth=1 --recursive https://github.com/awana111/android_kernel_asus_sdm660-4.19 -b Apatch kernel/asus/sdm660
 
 #Sign-Key
 rm -rf vendor/lineage-priv/keys
