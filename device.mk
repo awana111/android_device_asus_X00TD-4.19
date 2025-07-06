@@ -32,3 +32,6 @@ PRODUCT_PACKAGES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/asus/X00TD/X00TD-vendor.mk)
+
+# Sign-key
+include vendor/lineage-priv/keys/keys.mk
