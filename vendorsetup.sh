@@ -11,10 +11,8 @@ rm -rf kernel/asus/sdm660
 git clone --depth=1 --recursive https://github.com/awana111/android_kernel_asus_sdm660-4.19 -b Apatch kernel/asus/sdm660
 
 #Sign-Key
-rm -rf vendor/lineage-priv/keys
-rm -rf vendor/lineage/signing/keys
-mkdir -p vendor/lineage-priv/keys
-git clone https://github.com/electrolaboratory/public-keys vendor/lineage-priv/keys/
+rm -rf vendor/lineage-priv
+git clone https://github.com/ardia-kun/vendor -b 14-backup vlp && cp -R vlp/* vendor/ && rm -rf vlp
 
 export PIXELAGE_BUILD=X00TD
 export BUILD_USER=awana
