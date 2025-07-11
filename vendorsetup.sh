@@ -10,7 +10,7 @@ git clone --depth=1 https://github.com/SonicBSV/android_hardware_qcom-caf_msm899
 rm -rf hardware/qcom-caf/sdm660/display
 rm -rf hardware/qcom/display
 rm -rf hardware/qcom-caf/msm8998/display
-git clone --depth=1 https://github.com/SonicBSV/android_hardware_qcom-caf_msm8998_display-4.19 hardware/qcom-caf/msm8998/display
+git clone --depth=1 https://github.com/Whot1966/hardware_qcom_display hardware/qcom/display
 
 rm -rf hardware/qcom-caf/msm8998/media
 rm -rf hardware/qcom-caf/sdm660/media
