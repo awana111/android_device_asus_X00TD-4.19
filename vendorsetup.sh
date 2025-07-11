@@ -5,7 +5,7 @@ git clone --depth=1 https://github.com/ikwfahmi/android_device_asus_sdm660-commo
 rm -rf hardware/qcom-caf/sdm660/audio
 rm -rf hardware/qcom/audio
 rm -rf hardware/qcom-caf/msm8998//audio
-git clone --depth=1 https://github.com/SonicBSV/android_hardware_qcom-caf_msm8998_audio-4.19 hhardware/qcom-caf/msm8998//audio
+git clone --depth=1 https://github.com/SonicBSV/android_hardware_qcom-caf_msm8998_audio-4.19 hardware/qcom-caf/msm8998//audio
 
 rm -rf hardware/qcom-caf/sdm660/display
 rm -rf hardware/qcom/display
